@@ -47,7 +47,7 @@ button{
     background:#333;
     color:white;
     cursor:pointer;
-    transition:0.2s;
+    transition:0.1s;
 }
 
 button:hover{
@@ -66,4 +66,16 @@ button:hover{
 .zero{
     grid-column: span 2;
     border-radius:40px;
+
+}
+
+/* Number buttons normal hover effect (optional) */
+button:not(.orange):active {
+    background:#444;   /* thoda dark for number press */
+}
+
+/* Operator buttons active effect */
+.orange:active {
+    background:white;  /* operator white on touch */
+    color:#ff9500;     /* text color orange while active */
 }
